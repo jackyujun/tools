@@ -27,7 +27,7 @@ class CaculateAppMachines {
     }
 
     def static getCabinetOfMathine(hostName){
-        def http = new HTTPBuilder( 'http://172.30.58.21' )
+        def http = new HTTPBuilder( 'http://localhost' )
         def resultList = [];
         http.request(GET,TEXT) {
             uri.path = '/getvalue.php'
@@ -49,72 +49,10 @@ class CaculateAppMachines {
     }
 
     def static hzAppNames = [
-        'hz.wholesale',
-        'hz.wssearch',
-        'hz.shopsite',
-        'hz.shopcart',
-        'hz.evadisplay',
-        'hz.tpweb',
-        'hz.freight',
-        'hz.placeorderserver',
-        'hz.aedetail',
-        'hz.lighthouse',
-        'hz.wslogin',
-        'hz.aecrosslink',
-        'hz.marketingserver',
-        'hz.tpserver',
-        'hz.logisticsserver',
-        'hz.wsproductreadserver',
-        'hz.menuserver',
-        'hz.msgserver',
-        'hz.aecategoryserver',
-        'hz.shopserver',
-        'hz.spserver',
-        'hz.uicservice',
-        'hz.wsproductrecommend',
-        'hz.marketingfront',
-        'hz.myaliexpress',
-        'hz.activity',
-        'hz.taesitecenter',
-        'hz.wsleno',
-        'hz.aeseodataserver'
+        'wholesale'
     ]
 
     def static usAppNames = [
-        'wholesale',
-        'wssearch',
-        'shopsite',
-        'shopcart',
-        'evadisplay',
-        'tpweb',
-        'freight',
-        'marketingfront',
-        'buyer',
-        'messagecenter',
-        'myaliexpress',
-        'hz.myaliexpress',
-        'placeorderserver',
-        'wsi18n',
-        'aedetail',
-        'lighthouse',
-        'activity',
-        'hourlydeals',
-        'wslogin',
-        'aecrosslink',
-        'marketingserver',
-        'tpserver',
-        'logisticsserver',
-        'wsproductreadserver',
-        'menuserver',
-        'msgserver',
-        'aecategoryserver',
-        'shopserver',
-        'spserver',
-        'taesitecenter',
-        'uicservice',
-        'wsproductrecommend',
-        'wsleno',
-        'aeseodataserver',
-        'aekeyworkmap'
+        'wholesale'
     ]
 }
